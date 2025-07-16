@@ -563,19 +563,7 @@ $editProductId = isset($_GET['edit']) ? intval($_GET['edit']) : 0;
                         preview.appendChild(item);
                     });
                     
-                    // Actualizar campo oculto con solo las rutas originales
-                    const originalPaths = data.files.map(file => file.original);
-                    const currentImages = JSON.parse(document.getElementById('imagesJson').value || '[]');
-                    const updatedImages = [...currentImages, ...originalPaths];
-                    document.getElementById('imagesJson').value = JSON.stringify(updatedImages);
-                    
-                    // Actualizar campo oculto con solo las rutas originales
-                    const originalPaths = data.files.map(file => file.original);
-                    const currentImages = JSON.parse(document.getElementById('editImagesJson').value || '[]');
-                    const updatedImages = [...currentImages, ...originalPaths];
-                    document.getElementById('editImagesJson').value = JSON.stringify(updatedImages);
-                    
-                    // Actualizar campo oculto
+                    // Actualizar campos ocultos
                     updateImagesJson();
                     
                     // Limpiar selección
