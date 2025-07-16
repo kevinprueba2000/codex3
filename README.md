@@ -240,4 +240,7 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 
 ---
 
-**Desarrollado con ❤️ por AlquimiaTechnologic** 
+
+## Node API
+
+La carpeta `api` incluye un servidor Express para carga de imágenes y validación JSON. Ejecuta `npm install` dentro de `api` y luego `node app.js` para iniciarlo.
